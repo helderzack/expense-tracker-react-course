@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ExpenseChart from './components/ExpenseChart/ExpenseChart';
+import ExpenseHeader from './components/ExpenseHeader/ExpenseHeader';
+import ExpenseItem from './components/ExpenseItem/ExpenseItem';
+import Filter from './components/Filter/Filter';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+  return(
+    <div className="app">
+      <header>
+        <h1>Expense Tracker</h1>
+        <ExpenseHeader/>
       </header>
+      <main className='expense-area'>
+        <Filter/>
+        <ExpenseChart/>
+        <ExpenseItem/>
+      </main>
     </div>
   );
 }
