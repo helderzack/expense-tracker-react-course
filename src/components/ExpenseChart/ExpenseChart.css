@@ -1,0 +1,19 @@
+.chart-area {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+}
+
+.chart-item {
+  height: 50%;
+  color: black;
+}
+
+.chart-draw {
+  background-color: rgb(238, 144, 238);
+  width: 25%;
+  border-radius: 15px;
+  height: 100%;
+}

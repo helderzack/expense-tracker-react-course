@@ -22,6 +22,8 @@ header {
 
 .expense-area {
   margin-top: 5vh;
+  border: none;
+  border-radius: 15px;
   background-color: var(--text-primary);
   color: var(--background-primary);
   width: 50%;
